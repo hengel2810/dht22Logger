@@ -1,0 +1,19 @@
+{
+  "name": "dht22Logger",
+  "version": "1.0.0",
+  "description": "MQTT listener for dht22 sensors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hengel2810/dht22Logger.git"
+  },
+  "author": "Henrik Engelbrink",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^2.14.0",
+    "realm": "^2.0.12"
+  }
+}
