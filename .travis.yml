@@ -5,7 +5,6 @@ sudo: required
 services:
   - docker
 script:
-  - npm run test
   - export REPO=hengel2810/dht22logger
   - export COMMIT=latest 
   - docker build -f Dockerfile -t $REPO:$COMMIT .
