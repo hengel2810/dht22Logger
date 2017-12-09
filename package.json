@@ -4,6 +4,7 @@
   "description": "MQTT listener for dht22 sensors",
   "main": "index.js",
   "scripts": {
+    "start": "index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

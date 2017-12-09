@@ -2,7 +2,8 @@ const mqtt = require("mqtt")
 const Realm = require("realm");
 
 if(!process.env.MQTT_USER || !process.env.MQTT_PASSWORD || !process.env.MQTT_PORT || !process.env.MQTT_HOST) {
-	console.error("ENV missing");
+	var err = new Error("ENV missing");
+	throw err;
 }
 
 const DHT22ValueSchema = {
@@ -15,7 +16,7 @@ const DHT22ValueSchema = {
 	}
 };
 
-let realm = new Realm({path:"../dht22Data/dht22.realm", schema: [DHT22ValueSchema]});
+let realm = new Realm({path:"./dht22Data/dht22.realm", schema: [DHT22ValueSchema]});
 
 var options = {
 	username:process.env.MQTT_USER,
