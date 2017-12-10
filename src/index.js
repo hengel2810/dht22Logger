@@ -16,7 +16,7 @@ const DHT22ValueSchema = {
 	}
 };
 
-let realm = new Realm({path:"./dht22Data/dht22.realm", schema: [DHT22ValueSchema]});
+let realm = new Realm({path:"../dht22Data/dht22.realm", schema: [DHT22ValueSchema]});
 
 var options = {
 	username:process.env.MQTT_USER,
