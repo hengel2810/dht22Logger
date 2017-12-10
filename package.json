@@ -2,9 +2,9 @@
   "name": "dht22Logger",
   "version": "1.0.0",
   "description": "MQTT listener for dht22 sensors",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "index.js",
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
